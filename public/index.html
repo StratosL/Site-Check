@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site-Check - Website Monitoring Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Site-Check</h1>
+            <p>Monitor your websites and get notified when they go offline</p>
+        </header>
+
+        <!-- Add Website Section -->
+        <div class="add-website-section">
+            <div class="input-group">
+                <input 
+                    type="url" 
+                    id="urlInput" 
+                    placeholder="Enter website URL (e.g., https://example.com)" 
+                    autocomplete="url"
+                />
+                <button id="addButton" class="btn btn-primary">
+                    Add Website
+                </button>
+            </div>
+            <div id="errorMessage" class="error-message"></div>
+        </div>
+
+        <!-- Websites List Section -->
+        <main>
+            <div class="websites-header">
+                <h2>Monitored Websites</h2>
+                <div id="refreshIndicator" class="refresh-indicator">
+                    <span class="refresh-icon">↻</span>
+                    <span>Auto-refreshing...</span>
+                </div>
+            </div>
+            
+            <div id="websitesList" class="websites-list">
+                <!-- Website items will be dynamically added here -->
+                <div class="empty-state">
+                    <p>No websites added yet. Add your first website above to start monitoring!</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Status checks run every 60 minutes. Email notifications are sent when a site goes offline.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
