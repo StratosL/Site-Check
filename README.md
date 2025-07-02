@@ -61,18 +61,8 @@ PORT=3000
 2. Generate an app password: https://myaccount.google.com/apppasswords
 3. Use your Gmail address as `SMTP_USER` and the app password as `SMTP_PASS`
 
-### 4. Create Required Directories
 
-```bash
-mkdir public
-```
-
-Move the frontend files to the public directory:
-- `index.html` → `public/index.html`
-- `style.css` → `public/style.css`
-- `script.js` → `public/script.js`
-
-### 5. Start the Application
+### 4. Start the Application
 
 For production:
 ```bash
