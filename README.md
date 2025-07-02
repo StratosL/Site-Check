@@ -62,6 +62,7 @@ PORT=3000
 3. Use your Gmail address as `SMTP_USER` and the app password as `SMTP_PASS`
 
 Correct Formatting
+
 Let's say your App Password is:
 
 abcd efgh ijkl mnop
