@@ -61,6 +61,15 @@ PORT=3000
 2. Generate an app password: https://myaccount.google.com/apppasswords
 3. Use your Gmail address as `SMTP_USER` and the app password as `SMTP_PASS`
 
+Correct Formatting
+Let's say your App Password is:
+
+abcd efgh ijkl mnop
+
+In your .env file, it should look like this, with no spaces:
+
+EMAIL_PASS="abcdefghijklmnop"
+
 
 ### 4. Start the Application
 
