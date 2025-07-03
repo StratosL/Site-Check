@@ -11,6 +11,8 @@ A simple, production-ready web application that monitors websites and sends emai
 - **File-Based Database**: Uses a simple JSON file for data persistence
 - **Real-time Updates**: Auto-refreshes status on the UI every 30 seconds
 
+[Screenshot] (https://stratoslouvaris.gr/wp-content/uploads/2025/07/sitecheck.png)
+
 ## Prerequisites
 
 - Node.js (v14 or higher)
