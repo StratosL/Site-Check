@@ -81,7 +81,10 @@ EMAIL_PASS="abcdefghijklmnop"
 
 ### 4. Start the Application With Docker (Recommended)
 
-In the directory Site-Check run: docker compose up -d
+In the directory Site-Check run: 
+```bash
+docker compose up -d
+```
 
 ### 4.1 Start the Application without Docker (If you don't want docker)
 
