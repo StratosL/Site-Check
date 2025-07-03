@@ -16,12 +16,15 @@ A simple, production-ready web application that monitors websites and sends emai
 - Node.js (v14 or higher)
 - npm (Node Package Manager)
 - SMTP email account for sending notifications (e.g., Gmail, SendGrid, etc.)
+- Docker & Docker compose (Recommended)
 
 ## Installation & Setup
 
-### 1. Clone or Download the Project
-
-Create a new directory for your project and add all the provided files.
+Clone the repository and navigate to the project directory:
+```bash
+git clone stable https://github.com/StratosL/Site-Check.git
+cd Site-Check
+```
 
 ### 2. Install Dependencies
 
@@ -30,6 +33,8 @@ npm install
 ```
 
 ### 3. Configure Email Settings
+
+Before running the services, you need to set up your environment variables.
 
 Create a `.env` file in the root directory (copy from `.env.example`):
 
@@ -72,7 +77,11 @@ In your .env file, it should look like this, with no spaces:
 EMAIL_PASS="abcdefghijklmnop"
 
 
-### 4. Start the Application
+### 4. Start the Application With Docker (Recommended)
+
+In the directory Site-Check run: docker compose up -d
+
+### 4.1 Start the Application without Docker (If you don't want docker)
 
 For production:
 ```bash
