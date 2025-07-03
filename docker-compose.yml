@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  site-check:
+    # The 'build' instruction tells Docker to use the Dockerfile in the current directory
+    build: .
+    container_name: site-check
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://user:password@db:5432/site-check
+
+  db:
+    image: postgres:15-alpine
+    container_name: site-check-db
+    restart: unless-stopped
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=site-check
+
+volumes:
+  postgres_data:
